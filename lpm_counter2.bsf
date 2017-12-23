@@ -1,0 +1,58 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 0 0 208 128)
+	(text "lpm_counter2" (rect 56 0 171 19)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 109 31 124)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "clock" (rect 0 0 36 16)(font "Arial" (font_size 8)))
+		(text "clock" (rect 4 48 33 63)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 48 64))
+	)
+	(port
+		(pt 208 64)
+		(output)
+		(text "cout" (rect 0 0 29 16)(font "Arial" (font_size 8)))
+		(text "cout" (rect 180 48 203 63)(font "Arial" (font_size 8)))
+		(line (pt 208 64)(pt 152 64))
+	)
+	(port
+		(pt 208 88)
+		(output)
+		(text "q[7..0]" (rect 0 0 43 16)(font "Arial" (font_size 8)))
+		(text "q[7..0]" (rect 168 72 203 87)(font "Arial" (font_size 8)))
+		(line (pt 208 88)(pt 152 88)(line_width 3))
+	)
+	(drawing
+		(text "up counter" (rect 149 112 355 238)(font "Arial" ))
+		(line (pt 0 0)(pt 210 0))
+		(line (pt 210 0)(pt 210 130))
+		(line (pt 0 130)(pt 210 130))
+		(line (pt 0 0)(pt 0 130))
+		(line (pt 48 40)(pt 152 40))
+		(line (pt 152 40)(pt 152 112))
+		(line (pt 48 112)(pt 152 112))
+		(line (pt 48 40)(pt 48 112))
+	)
+)

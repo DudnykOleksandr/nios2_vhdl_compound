@@ -1,0 +1,9 @@
+
+
+D:/Quartus/nios2_vhdl_compound/nios2.vhd
+
+Mar 23 05PM:17:13>: File D:/Quartus/nios2_vhdl_compound/nios2.cnx could not be opened
+
+D:/Quartus/nios2_vhdl_compound/nios2.vhd
+
+Mar 23 06PM:26:43>: File D:/Quartus/nios2_vhdl_compound/nios2.cnx could not be opened

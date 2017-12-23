@@ -1,0 +1,2 @@
+Error: Error creating IP Search Path index file: could not create C:\Users\?\.altera.quartus\ip
+Error: Error creating user filters file: could not create C:\Users\?\.sopc_builder

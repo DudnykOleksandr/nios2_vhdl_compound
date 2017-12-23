@@ -1,0 +1,189 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 132 02/25/2009 SJ Web Edition
+# Date created = 17:45:39  March 10, 2011
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		nios2_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
+set_global_assignment -name TOP_LEVEL_ENTITY ProcLed
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:45:39  MARCH 10, 2011"
+set_global_assignment -name LAST_QUARTUS_VERSION 10.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name SEARCH_PATH ./
+set_global_assignment -name SEARCH_PATH "ddr_sdram_controller-library/"
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name MISC_FILE "C:/altera/Projects/nios2/nios2.dpf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_G21 -to clock
+set_global_assignment -name FORCE_CONFIGURATION_VCCIO ON
+set_location_assignment PIN_D2 -to VCC
+set_location_assignment PIN_J6 -to buttons[0]
+set_location_assignment PIN_H5 -to buttons[1]
+set_location_assignment PIN_H6 -to buttons[2]
+set_location_assignment PIN_G4 -to buttons[3]
+set_global_assignment -name QIP_FILE nios2.qip
+set_global_assignment -name BDF_FILE ProcLed.bdf
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_location_assignment PIN_G5 -to buttons[4]
+set_location_assignment PIN_J7 -to buttons[5]
+set_location_assignment PIN_J1 -to led[0]
+set_location_assignment PIN_J2 -to led[1]
+set_location_assignment PIN_J3 -to led[2]
+set_location_assignment PIN_H1 -to led[3]
+set_location_assignment PIN_F2 -to led[4]
+set_location_assignment PIN_E1 -to led[5]
+set_location_assignment PIN_C1 -to led[6]
+set_location_assignment PIN_C2 -to led[7]
+set_location_assignment PIN_B2 -to led[8]
+set_location_assignment PIN_B1 -to led[9]
+set_global_assignment -name MISC_FILE "D:/Quartus/Projects/nios2/nios2.dpf"
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name QIP_FILE altpll0.qip
+set_global_assignment -name VHDL_FILE Counter.vhd
+set_global_assignment -name QIP_FILE lpm_counter1.qip
+set_global_assignment -name MISC_FILE "D:/Quartus/nios2_vhdl_compound/nios2.dpf"
+set_global_assignment -name VHDL_FILE Dac_controller.vhd
+set_global_assignment -name VHDL_FILE 32to64bus.vhd
+set_global_assignment -name QIP_FILE altpll1.qip
+set_location_assignment PIN_D6 -to DRAM_WE_N
+set_location_assignment PIN_F7 -to DRAM_RAS_N
+set_location_assignment PIN_F10 -to DRAM_DQ[15]
+set_location_assignment PIN_E10 -to DRAM_DQ[14]
+set_location_assignment PIN_A10 -to DRAM_DQ[13]
+set_location_assignment PIN_B10 -to DRAM_DQ[12]
+set_location_assignment PIN_C10 -to DRAM_DQ[11]
+set_location_assignment PIN_A9 -to DRAM_DQ[10]
+set_location_assignment PIN_B9 -to DRAM_DQ[9]
+set_location_assignment PIN_A8 -to DRAM_DQ[8]
+set_location_assignment PIN_F8 -to DRAM_DQ[7]
+set_location_assignment PIN_H9 -to DRAM_DQ[6]
+set_location_assignment PIN_G9 -to DRAM_DQ[5]
+set_location_assignment PIN_F9 -to DRAM_DQ[4]
+set_location_assignment PIN_E9 -to DRAM_DQ[3]
+set_location_assignment PIN_H10 -to DRAM_DQ[2]
+set_location_assignment PIN_G10 -to DRAM_DQ[1]
+set_location_assignment PIN_D10 -to DRAM_DQ[0]
+set_location_assignment PIN_B8 -to DRAM_DQM[1]
+set_location_assignment PIN_E7 -to DRAM_DQM[0]
+set_location_assignment PIN_G7 -to DRAM_CS_N
+set_location_assignment PIN_E6 -to DRAM_CKE
+set_location_assignment PIN_G8 -to DRAM_CAS_N
+set_location_assignment PIN_A4 -to DRAM_BA[1]
+set_location_assignment PIN_B5 -to DRAM_BA[0]
+set_location_assignment PIN_A7 -to DRAM_ADDR[11]
+set_location_assignment PIN_B4 -to DRAM_ADDR[10]
+set_location_assignment PIN_B7 -to DRAM_ADDR[9]
+set_location_assignment PIN_C7 -to DRAM_ADDR[8]
+set_location_assignment PIN_A6 -to DRAM_ADDR[7]
+set_location_assignment PIN_B6 -to DRAM_ADDR[6]
+set_location_assignment PIN_C6 -to DRAM_ADDR[5]
+set_location_assignment PIN_A5 -to DRAM_ADDR[4]
+set_location_assignment PIN_C3 -to DRAM_ADDR[3]
+set_location_assignment PIN_B3 -to DRAM_ADDR[2]
+set_location_assignment PIN_A3 -to DRAM_ADDR[1]
+set_location_assignment PIN_C4 -to DRAM_ADDR[0]
+set_location_assignment PIN_R12 -to db[11]
+set_location_assignment PIN_R11 -to db[10]
+set_location_assignment PIN_T12 -to db[9]
+set_location_assignment PIN_U12 -to db[8]
+set_location_assignment PIN_R14 -to db[7]
+set_location_assignment PIN_T14 -to db[6]
+set_location_assignment PIN_AB7 -to db[5]
+set_location_assignment PIN_AA7 -to db[4]
+set_location_assignment PIN_AA9 -to db[3]
+set_location_assignment PIN_T16 -to db[2]
+set_location_assignment PIN_AB9 -to db[1]
+set_location_assignment PIN_R16 -to db[0]
+set_location_assignment PIN_U9 -to randw
+set_location_assignment PIN_T9 -to nreset
+set_location_assignment PIN_U10 -to nldac
+set_location_assignment PIN_T10 -to ncs
+set_location_assignment PIN_V15 -to a[1]
+set_location_assignment PIN_W15 -to a[0]
+set_location_assignment PIN_C8 -to DRAM_ADDR[12]
+set_location_assignment PIN_E5 -to DRAM_CLK
+set_location_assignment PIN_F1 -to clk_but
+set_global_assignment -name VHDL_FILE DacCodesGen.vhd
+set_global_assignment -name MISC_FILE "D:/Quartus/Projects/nios2_vhdl_compound/nios2.dpf"
+set_global_assignment -name QIP_FILE lpm_counter2.qip
+set_global_assignment -name QIP_FILE lpm_mux0.qip
+set_location_assignment PIN_E4 -to count_enable
+set_global_assignment -name VHDL_FILE Usb_Sender.vhd
+set_global_assignment -name VHDL_FILE Spi_Controller.vhd
+set_location_assignment PIN_AA20 -to in1
+set_location_assignment PIN_AB20 -to in2
+set_location_assignment PIN_AA19 -to in3
+set_location_assignment PIN_AB19 -to in4
+set_location_assignment PIN_Y7 -to PvzLogic
+set_location_assignment PIN_U8 -to SpNout
+set_location_assignment PIN_V6 -to SpOut
+set_location_assignment PIN_V7 -to Latch
+set_location_assignment PIN_U15 -to sclk
+set_location_assignment PIN_Y17 -to nsync
+set_location_assignment PIN_AB17 -to sdin
+set_location_assignment PIN_AA17 -to nldac_calibr
+set_location_assignment PIN_AB18 -to nclr
+set_location_assignment PIN_AA18 -to npd
+set_location_assignment PIN_T15 -to sdo
+set_location_assignment PIN_AB10 -to d[0]
+set_location_assignment PIN_AB8 -to d[1]
+set_location_assignment PIN_AB5 -to d[2]
+set_location_assignment PIN_AB3 -to d[3]
+set_location_assignment PIN_AA3 -to d[4]
+set_location_assignment PIN_V14 -to d[5]
+set_location_assignment PIN_Y13 -to d[6]
+set_location_assignment PIN_U13 -to d[7]
+set_location_assignment PIN_AA5 -to rst
+set_location_assignment PIN_AB4 -to pwren
+set_location_assignment PIN_AA4 -to txe
+set_location_assignment PIN_W13 -to wr
+set_location_assignment PIN_V12 -to rd
+set_location_assignment PIN_U14 -to rxf
+set_global_assignment -name VHDL_FILE switch_controller.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,162 @@
+Altera SOPC Builder Version 10.10 Build 153
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+No .sopc_builder configuration file(!)
+# 2012.09.28 16:43:56 (*) mk_custom_sdk starting
+# 2012.09.28 16:43:56 (*) Reading project D:/Quartus/Projects/nios2_vhdl_compound/nios2.ptf.
+
+# 2012.09.28 16:43:56 (*) Finding all CPUs
+# 2012.09.28 16:43:56 (*) Finding all available components
+# 2012.09.28 16:43:56 (*) Reading D:/Quartus/Projects/nios2_vhdl_compound/.sopc_builder/install.ptf
+
+# 2012.09.28 16:43:56 (*) Found 76 components
+
+# 2012.09.28 16:43:57 (*) Finding all peripherals
+
+# 2012.09.28 16:43:57 (*) Finding software components
+
+# 2012.09.28 16:43:57 (*) (Legacy SDK Generation Skipped)
+# 2012.09.28 16:43:57 (*) (All TCL Script Generation Skipped)
+# 2012.09.28 16:43:57 (*) (No Libraries Built)
+# 2012.09.28 16:43:57 (*) (Contents Generation Skipped)
+# 2012.09.28 16:43:57 (*) mk_custom_sdk finishing
+
+# 2012.09.28 16:43:57 (*) Starting generation for system: nios2.
+
+.
+.
+.
+.
+.
+..
+......
+....
+........
+.........
+..
+
+# 2012.09.28 16:43:59 (*) Running Generator Program for onchip_mem
+
+# 2012.09.28 16:44:00 (*) Running Generator Program for cpu_0
+
+# 2012.09.28 16:44:02 (*) Starting Nios II generation
+# 2012.09.28 16:44:02 (*)   Checking for plaintext license.
+# 2012.09.28 16:44:04 (*)   Couldn't query license setup in Quartus directory c:/altera/10.1/quartus
+# 2012.09.28 16:44:04 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2012.09.28 16:44:04 (*)   Plaintext license not found.
+# 2012.09.28 16:44:04 (*)   Checking for encrypted license (non-evaluation).
+# 2012.09.28 16:44:05 (*)   Couldn't query license setup in Quartus directory c:/altera/10.1/quartus
+
+# 2012.09.28 16:44:05 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2012.09.28 16:44:05 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+# 2012.09.28 16:44:05 (*)   Getting CPU configuration settings
+# 2012.09.28 16:44:05 (*)   Elaborating CPU configuration settings
+# 2012.09.28 16:44:05 (*)   Creating all objects for CPU
+# 2012.09.28 16:44:05 (*)     Testbench
+# 2012.09.28 16:44:05 (*)     Instruction decoding
+# 2012.09.28 16:44:05 (*)       Instruction fields
+
+# 2012.09.28 16:44:05 (*)       Instruction decodes
+# 2012.09.28 16:44:06 (*)       Signals for RTL simulation waveforms
+# 2012.09.28 16:44:06 (*)       Instruction controls
+# 2012.09.28 16:44:06 (*)     Pipeline frontend
+# 2012.09.28 16:44:06 (*)     Pipeline backend
+# 2012.09.28 16:44:09 (*)   Generating HDL from CPU objects
+# 2012.09.28 16:44:17 (*)   Creating encrypted HDL
+# 2012.09.28 16:44:20 (*) Done Nios II generation
+
+# 2012.09.28 16:44:21 (*) Running Generator Program for jtag_uart_0
+
+# 2012.09.28 16:44:24 (*) Running Generator Program for sys_clk_timer
+
+# 2012.09.28 16:44:25 (*) Running Generator Program for sysid
+
+# 2012.09.28 16:44:26 (*) Running Generator Program for gen_code_value_pio_0
+
+# 2012.09.28 16:44:27 (*) Running Generator Program for gen_code_value_pio_1
+
+# 2012.09.28 16:44:28 (*) Running Generator Program for sdram_0
+
+# 2012.09.28 16:44:30 (*) Running Generator Program for mode_select
+
+# 2012.09.28 16:44:31 (*) Running Generator Program for comparator_pio
+
+# 2012.09.28 16:44:32 (*) Running Generator Program for led_pio
+
+# 2012.09.28 16:44:34 (*) Running Generator Program for gen_code_strobe
+
+# 2012.09.28 16:44:35 (*) Running Generator Program for switch_pio
+
+# 2012.09.28 16:44:36 (*) Running Generator Program for cal_dac_code_pio
+
+# 2012.09.28 16:44:37 (*) Running Generator Program for usb_code_pio
+
+# 2012.09.28 16:44:38 (*) Running Generator Program for sample_and_hold_pio
+
+# 2012.09.28 16:44:39 (*) Running Generator Program for latch_pio
+
+# 2012.09.28 16:44:40 (*) Running Generator Program for nios2_clock_0
+
+# 2012.09.28 16:44:42 (*) Running Generator Program for nios2_clock_1
+
+# 2012.09.28 16:44:44 (*) Running Generator Program for nios2_clock_2
+
+# 2012.09.28 16:44:45 (*) Running Generator Program for nios2_clock_3
+
+# 2012.09.28 16:44:47 (*) Running Generator Program for nios2_clock_4
+
+# 2012.09.28 16:44:49 (*) Running Generator Program for nios2_clock_5
+
+# 2012.09.28 16:44:51 (*) Running Generator Program for nios2_clock_6
+
+# 2012.09.28 16:44:52 (*) Running Generator Program for nios2_clock_7
+
+# 2012.09.28 16:44:54 (*) Running Generator Program for nios2_clock_8
+
+# 2012.09.28 16:44:56 (*) Running Generator Program for nios2_clock_9
+
+# 2012.09.28 16:44:58 (*) Running Generator Program for nios2_clock_10
+
+# 2012.09.28 16:44:59 (*) Running Generator Program for nios2_clock_11
+
+# 2012.09.28 16:45:01 (*) Running Generator Program for nios2_clock_12
+
+# 2012.09.28 16:45:03 (*) Running Generator Program for nios2_clock_13
+
+# 2012.09.28 16:45:05 (*) Running Generator Program for nios2_clock_14
+
+# 2012.09.28 16:45:07 (*) Running Generator Program for nios2_clock_15
+
+# 2012.09.28 16:45:09 (*) Running Generator Program for nios2_clock_16
+
+# 2012.09.28 16:45:11 (*) Running Generator Program for nios2_clock_17
+
+# 2012.09.28 16:45:13 (*) Running Generator Program for nios2_clock_18
+
+.
+
+
+# 2012.09.28 16:45:15 (*) Running Test Generator Program for sdram_0
+
+# 2012.09.28 16:45:15 (*) Making arbitration and system (top) modules.
+
+# 2012.09.28 16:45:37 (*) Generating Quartus symbol for top level: nios2
+
+# 2012.09.28 16:45:37 (*) Generating Symbol D:/Quartus/Projects/nios2_vhdl_compound/nios2.bsf
+
+# 2012.09.28 16:45:37 (*) Creating command-line system-generation script: D:/Quartus/Projects/nios2_vhdl_compound/nios2_generation_script
+
+# 2012.09.28 16:45:37 (*) Running setup for HDL simulator: modelsim
+
+
+# 2012.09.28 16:45:38 (*) Completed generation for system: nios2.
+# 2012.09.28 16:45:38 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : D:/Quartus/Projects/nios2_vhdl_compound/nios2.ptf 
+  System HDL Model : D:/Quartus/Projects/nios2_vhdl_compound/nios2.vhd 
+  System Generation Script : D:/Quartus/Projects/nios2_vhdl_compound/nios2_generation_script 
+
+# 2012.09.28 16:45:38 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

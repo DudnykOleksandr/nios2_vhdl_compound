@@ -1,0 +1,55 @@
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity CodeCoverter is
+Generic (N_IN: natural := 11;N_OUT: natural := 7);
+port(
+X : inout STD_LOGIC_VECTOR(N_IN downto 0);
+CLK: in STD_LOGIC;
+Y : out STD_LOGIC_VECTOR(N_OUT downto 0)
+);
+end CodeCoverter;	 
+
+architecture ADC_CodeCoverter of CodeCoverter is
+begin
+process (CLK) is
+type  memory_type_SCHVN is array(N_IN downto 0) of REAL; 
+type  memory_type_2 is array(N_OUT downto 0) of REAL; 
+
+constant memory_weighs_SCHVN : memory_type_SCHVN :=(197.4,122.0,75.4,46.6,17.8,28.8,11.0,6.8,4.2,2.6,1.6,1.0);
+constant memory_weighs_2 : memory_type_2 :=(128.0,64.0,32.0,16.0,8.0,4.0,2.0,1.0);
+
+variable input_signal: REAL:=0.0 ;
+variable input_tmp: REAL:=0.0 ;	
+variable output_reg : STD_LOGIC_VECTOR(N_OUT downto 0);
+
+subtype Max_8 is integer range N_OUT downto 0;  
+subtype Max_11 is integer range 0 to N_IN; 
+
+begin	
+	--X<="010100000001";			  
+	
+	input_signal:=0.0;
+	input_tmp:=0.0;		
+	
+	loop_input_calculation: for i in Max_11 loop
+		if(X(i)='1') then
+		input_signal:=input_signal+memory_weighs_SCHVN(i);
+		end if;
+	end loop loop_input_calculation;
+
+	loop_output_calculation: for i in Max_8 loop   
+		input_tmp:=input_signal-memory_weighs_2(i);
+		if (input_tmp > 0.0) then
+			input_signal:=input_tmp;
+			output_reg(i):='1';
+		else
+			output_reg(i):='0';
+		end if;
+	end loop loop_output_calculation;
+	
+	Y<=output_reg;
+	
+end process;
+end ADC_CodeCoverter;

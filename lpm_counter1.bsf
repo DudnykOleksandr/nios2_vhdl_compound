@@ -1,0 +1,65 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 0 0 200 152)
+	(text "lpm_counter1" (rect 54 0 164 18)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 134 28 148)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "clk_en" (rect 0 0 44 16)(font "Arial" (font_size 8)))
+		(text "clk_en" (rect 4 48 40 63)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 56 64))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "clock" (rect 0 0 36 16)(font "Arial" (font_size 8)))
+		(text "clock" (rect 4 72 33 87)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 56 88))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "updown" (rect 0 0 51 16)(font "Arial" (font_size 8)))
+		(text "updown" (rect 4 96 46 111)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 56 112))
+	)
+	(port
+		(pt 200 64)
+		(output)
+		(text "q[5..0]" (rect 0 0 43 16)(font "Arial" (font_size 8)))
+		(text "q[5..0]" (rect 160 48 195 63)(font "Arial" (font_size 8)))
+		(line (pt 200 64)(pt 152 64)(line_width 3))
+	)
+	(drawing
+		(text "up/down" (rect 156 137 353 287)(font "Arial" ))
+		(line (pt 0 0)(pt 202 0))
+		(line (pt 202 0)(pt 202 154))
+		(line (pt 0 154)(pt 202 154))
+		(line (pt 0 0)(pt 0 154))
+		(line (pt 56 40)(pt 152 40))
+		(line (pt 152 40)(pt 152 136))
+		(line (pt 56 136)(pt 152 136))
+		(line (pt 56 40)(pt 56 136))
+	)
+)

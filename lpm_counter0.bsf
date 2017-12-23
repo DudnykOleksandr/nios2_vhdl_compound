@@ -1,0 +1,72 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 0 0 200 176)
+	(text "lpm_counter0" (rect 54 0 164 18)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 158 28 172)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "clock" (rect 0 0 36 16)(font "Arial" (font_size 8)))
+		(text "clock" (rect 4 48 33 63)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 56 64))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "updown" (rect 0 0 51 16)(font "Arial" (font_size 8)))
+		(text "updown" (rect 4 72 46 87)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 56 88))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "cnt_en" (rect 0 0 46 16)(font "Arial" (font_size 8)))
+		(text "cnt_en" (rect 4 96 41 111)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 56 112))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "sclr" (rect 0 0 24 16)(font "Arial" (font_size 8)))
+		(text "sclr" (rect 4 120 24 135)(font "Arial" (font_size 8)))
+		(line (pt 0 136)(pt 56 136))
+	)
+	(port
+		(pt 200 64)
+		(output)
+		(text "q[5..0]" (rect 0 0 43 16)(font "Arial" (font_size 8)))
+		(text "q[5..0]" (rect 160 48 195 63)(font "Arial" (font_size 8)))
+		(line (pt 200 64)(pt 152 64)(line_width 3))
+	)
+	(drawing
+		(text "up/down" (rect 156 161 353 335)(font "Arial" ))
+		(line (pt 0 0)(pt 202 0))
+		(line (pt 202 0)(pt 202 178))
+		(line (pt 0 178)(pt 202 178))
+		(line (pt 0 0)(pt 0 178))
+		(line (pt 56 40)(pt 152 40))
+		(line (pt 152 40)(pt 152 160))
+		(line (pt 56 160)(pt 152 160))
+		(line (pt 56 40)(pt 56 160))
+	)
+)

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Oct 26 13:19:47 2013
+Quartus II Version : 10.1 Build 153 11/29/2010 SJ Full Version
+Revision Name : nios2
+Top-level Entity Name : ProcLed
+Family : Cyclone III
+Device : EP3C16F484C6
+Timing Models : Final
+Total logic elements : 6,362 / 15,408 ( 41 % )
+    Total combinational functions : 4,880 / 15,408 ( 32 % )
+    Dedicated logic registers : 4,178 / 15,408 ( 27 % )
+Total registers : 4230
+Total pins : 104 / 347 ( 30 % )
+Total virtual pins : 0
+Total memory bits : 309,376 / 516,096 ( 60 % )
+Embedded Multiplier 9-bit elements : 4 / 112 ( 4 % )
+Total PLLs : 3 / 4 ( 75 % )

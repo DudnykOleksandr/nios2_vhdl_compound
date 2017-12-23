@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity busExpander is
+Generic (inRes: natural := 31; outRes: natural:=63);
+
+	port
+	(
+	data0	: in STD_LOGIC_VECTOR (inRes DOWNTO 0);
+	data1	: in STD_LOGIC_VECTOR (inRes DOWNTO 0);
+	res		: out STD_LOGIC_VECTOR (outRes DOWNTO 0)
+	);
+end entity;
+
+architecture exp of busExpander is
+begin
+	
+	res<=data1&data0;
+
+end exp;

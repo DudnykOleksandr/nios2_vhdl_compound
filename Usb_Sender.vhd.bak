@@ -1,0 +1,94 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity USB_Sender is
+Generic (fullBusRes: natural := 20;senderRes: natural := 7;usefulRes: natural := 6);
+
+	port
+	(
+	data	: in STD_LOGIC_VECTOR (fullBusRes DOWNTO 0);
+	clk		: in std_logic;
+	
+		rd		: out std_logic;
+		wr 		: out std_logic;
+		d				: out STD_LOGIC_VECTOR (senderRes DOWNTO 0);
+		rxf			: out std_logic;
+		txe			: out std_logic;
+		pwren			: out std_logic;
+		rst			: out std_logic
+	);
+end entity;
+
+architecture rtl of USB_Sender is
+begin
+	process (clk) 
+	
+	type  dacValuesType is array(2 downto 0) of STD_LOGIC_VECTOR (usefulRes DOWNTO 0);
+	
+	variable dacValues: dacValuesType;
+	
+	variable temp: integer := 0;
+	variable tempData: STD_LOGIC_VECTOR (fullBusRes DOWNTO 0);
+	
+	variable reftime: time:= 10ns;
+	
+	variable t7: time:= 50ns;
+	variable t9: time:= 20ns;
+	variable t11: time:= 10ns;
+	variable t12: time:= 80ns;
+	variable t71112: time:= 140ns;
+	
+	begin
+	
+		dacValues(0):=data(usefulRes downto 0);
+		dacValues(1):=data(usefulRes*2+1 downto usefulRes+1);
+		dacValues(2):=data(usefulRes*3+2 downto usefulRes*2+2);
+	
+		rst<='1';
+		
+		if ( rising_edge( clk )) then
+			
+			if not(tempData=data) then	
+				tempData:=data;
+				temp:=0;				
+			end if;
+			
+			-- first 8 bit
+			if ( temp = 0 ) then
+				wr<= '1';
+				txe<='0';
+				d<= '0' & dacValues(0);		
+			elsif ( temp =  t7/reftime)  then
+				wr<='0';
+			elsif ( temp = (t7+t11)/reftime)  then
+				txe<='1';
+			
+			-- second 8 bit
+			elsif ( temp = t71112/reftime ) then
+				wr<= '1';
+				txe<='0';
+				d<= '0' & dacValues(1);		
+			elsif ( temp =  (t71112+t7)/reftime)  then
+				wr<='0';
+			elsif ( temp = (t71112+t7+t11)/reftime)  then
+				txe<='1';
+				
+			-- third 8 bit
+			elsif ( temp = t71112*2/reftime ) then
+				wr<= '1';
+				txe<='0';
+				d<= '1' & dacValues(2);
+			elsif ( temp =  (t71112*2+t7)/reftime)  then
+				wr<='0';
+			elsif ( temp = (t71112*2+t7+t11)/reftime)  then
+				txe<='1';
+					
+			end if;
+				
+			temp := temp + 1;
+		
+		end if;
+
+	end process;
+end rtl;

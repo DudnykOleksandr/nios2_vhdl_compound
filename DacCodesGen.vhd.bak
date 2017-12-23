@@ -1,0 +1,35 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity DacCodesGen is
+	port
+	(
+	clk		: in std_logic;
+	data	: out STD_LOGIC_VECTOR (63 DOWNTO 0)
+	);
+end entity;
+
+architecture codeGen of DacCodesGen is
+begin
+	process (clk) 
+	
+	variable temp: STD_LOGIC_VECTOR (63 DOWNTO 0);
+	variable tempInt: integer := 0;
+	
+	begin
+		
+		if ( rising_edge( clk )) then
+			
+			if(tempInt=0) then
+				data<="0000000011111111111111111111111100000000111111111111111111111111";
+				tempInt:=1;
+			else
+				data<="0000000000000000000000000000000000000000000000000000000000000000";
+				tempInt:=0;
+			end if;
+			
+		end if;
+	   	 
+	end process;
+end codeGen;
